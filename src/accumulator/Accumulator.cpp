@@ -1,5 +1,3 @@
-#pragma once
-
 #include "Accumulator.h"
 
 namespace accumulator {
