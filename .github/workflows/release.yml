@@ -9,10 +9,10 @@ jobs:
     strategy:
       matrix:
         include:
-          - architecture: x64
+          - architecture: x86_64
             platform: linux
             runs-on: ubuntu-latest
-          - architecture: x64
+          - architecture: x86_64
             platform: macosx
             runs-on: macos-latest
           - architecture: x64
@@ -62,9 +62,9 @@ jobs:
     strategy:
       matrix:
         include:
-          - architecture: x64
+          - architecture: x86_64
             platform: linux
-          - architecture: x64
+          - architecture: x86_64
             platform: macosx
           - architecture: x64
             platform: windows
