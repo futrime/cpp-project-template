@@ -9,10 +9,10 @@ jobs:
     strategy:
       matrix:
         include:
-          - architecture: x64
+          - architecture: x86_64
             platform: linux
             runs-on: ubuntu-latest
-          - architecture: x64
+          - architecture: x86_64
             platform: macosx
             runs-on: macos-latest
           - architecture: x64
@@ -27,7 +27,7 @@ jobs:
           xmake repo -u -y
 
       - run: |
-          xmake f -a ${{ matrix.architecture }} -m release -p ${{ matrix.platform }} -v -y
+          xmake f -m release -v -y
 
       - run: |
           xmake -v -y
