@@ -7,6 +7,7 @@ jobs:
   build:
     runs-on: ${{ matrix.runs-on }}
     strategy:
+      fail-fast: false
       matrix:
         include:
           - architecture: x86_64
@@ -60,6 +61,7 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     strategy:
+      fail-fast: false
       matrix:
         include:
           - architecture: x86_64
